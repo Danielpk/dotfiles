@@ -1,4 +1,7 @@
 local _old_path="$PATH"
+# use sublime as the visual editor
+export VISUAL=subl
+export EDITOR=$VISUAL
 
 # Local config
 [[ -f ~/.zshenv.local ]] && source ~/.zshenv.local
