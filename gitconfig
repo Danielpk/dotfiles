@@ -13,10 +13,8 @@
   pf = push --force-with-lease
   st = status
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/daniel/.gitignore
   autocrlf = input
-[merge]
-  ff = only
 [commit]
   template = ~/.gitmessage
 [fetch]
@@ -25,3 +23,12 @@
   autosquash = true
 [include]
   path = ~/.gitconfig.local
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.2/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Daniel Pakuschewski
+	email = contato@danielpk.com.br

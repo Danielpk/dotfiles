@@ -97,11 +97,6 @@ Your `~/.zshrc.local` might look like this:
       eval "$(pyenv init -)"
     fi
 
-Your `~/.vimrc.bundles.local` might look like this:
-
-    Plug 'Lokaltog/vim-powerline'
-    Plug 'stephenmckinney/vim-solarized-powerline'
-
 zsh Configurations
 ------------------
 
