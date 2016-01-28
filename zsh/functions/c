@@ -1,0 +1,7 @@
+c() {
+  if [[ $# > 0 ]]; then
+    cd ~/Code/$@
+  else
+    cd ~/Code
+  fi
+}
